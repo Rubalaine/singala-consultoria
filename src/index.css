@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: inherit;
+  box-sizing: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+body {
+  font-family: "Fira Sans", sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 56.5%;
+  }
+}
+@media screen and (max-width: 640px) {
+  html {
+    font-size: 50%;
+  }
+}
