@@ -20,6 +20,11 @@ const Card = styled.div`
   &:hover {
     transform: ${(props) => (props.altern ? "scale(1.140)" : "scale(1.025)")};
   }
+  @media screen and (max-width: 1024px) {
+    &:not(:last-child) {
+      margin-bottom: 5rem;
+    }
+  }
 `;
 const Icon = styled.i`
   font-size: 4rem;
@@ -55,7 +60,9 @@ const PricingCard = ({ name, price, options, altern }) => {
         <Option key={index}>{el}</Option>
       ))}
       <Spacer size={3} />
-      <Button altern={!altern} to='/'>comprar</Button>
+      <Button altern={!altern} to="/">
+        comprar
+      </Button>
     </Card>
   );
 };

@@ -6,6 +6,9 @@ const List = styled.div`
   width: 100%;
   justify-content: space-between;
   align-items: center;
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+  }
 `;
 const Cards = () => {
   return (

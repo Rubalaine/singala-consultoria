@@ -2,7 +2,6 @@ import React from "react";
 import AppWrapper from "../Wrappers/AppWrapper";
 import FlexContainer from "../Wrappers/FlexContainer";
 import Spacer from "../Utils/Spacer";
-import PricingCard from "./PricingCard";
 import Cards from "./Cards";
 const SectionPricing = () => {
   return (
