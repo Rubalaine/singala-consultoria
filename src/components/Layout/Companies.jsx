@@ -12,6 +12,9 @@ const ImageList = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
+  @media screen and (max-width: 640px) {
+    flex-wrap: wrap;
+  }
 `;
 const logos = [
   { logo: logo1, text: "logo1" },
