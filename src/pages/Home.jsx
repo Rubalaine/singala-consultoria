@@ -1,10 +1,7 @@
 import React, { lazy, Suspense } from "react";
 import Navigation from "../components/Layout/Navigation";
 import Section from "../components/Layout/Section";
-// import SectionIndex from "../components/Layout/SectionIndex";
-// import SectionPricing from "../components/Layout/SectionPricing";
-// import SectionSoftware from "../components/Layout/SectionSoftware";
-// import SectionTreinamento from "../components/Layout/SectionTreinamento";
+import Spacer from "../components/Utils/Spacer";
 const SectionIndex = lazy(() => import("../components/Layout/SectionIndex"));
 const SectionPricing = lazy(() =>
   import("../components/Layout/SectionPricing")
@@ -21,22 +18,22 @@ const Home = () => {
     <>
       <Section>
         <Navigation />
-        <Suspense fallback={<div>loading....</div>}>
+        <Suspense fallback={<Spacer size={20} />}>
           <SectionIndex />
         </Suspense>
       </Section>
       <Section altern>
-        <Suspense fallback={<div>loading....</div>}>
+        <Suspense fallback={<Spacer size={20} />}>
           <SectionTreinamento />
         </Suspense>
       </Section>
       <Section>
-        <Suspense fallback={<div>loading....</div>}>
+        <Suspense fallback={<Spacer size={20} />}>
           <SectionSoftware />
         </Suspense>
       </Section>
       <Section altern>
-        <Suspense fallback={<div>loading....</div>}>
+        <Suspense fallback={<Spacer size={20} />}>
           <SectionPricing />
         </Suspense>
       </Section>

@@ -5,6 +5,6 @@ const Space = styled.span`
   display: block;
   margin-bottom: ${(props) => (props.size ? props.size : 1)}rem;
 `;
-const Spacer = ({ size }) => <Space size={size}></Space>;
+const Spacer = ({ size }) => <Space size={size}> </Space>;
 
 export default Spacer;
