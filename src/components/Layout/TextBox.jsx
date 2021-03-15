@@ -16,6 +16,10 @@ const comeFromLeft = keyframes`
 const Box = styled.div`
   width: 50%;
   animation: ${comeFromLeft} 1.2s ease-in-out;
+  @media screen and (max-width: 640px) {
+    width: 100%;
+    text-align: center;
+  }
 `;
 const Sub = styled.h3`
   font-size: 1.7rem;

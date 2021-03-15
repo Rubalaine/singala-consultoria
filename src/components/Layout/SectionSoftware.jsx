@@ -10,7 +10,7 @@ const SectionSoftware = () => {
     <AppWrapper>
       <Spacer size={15} />
 
-      <FlexContainer>
+      <FlexContainer altern>
         <TextBox
           sub="consultoria exclusiva"
           title="Garantimos segurança ao seu negócio"

@@ -12,7 +12,7 @@ const SectionIndex = () => {
     <AppWrapper>
       <Spacer size={2} />
 
-      <FlexContainer>
+      <FlexContainer altern>
         <TextBox
           sub="consultoria exclusiva"
           title="Garantimos segurança ao seu negócio"

@@ -8,10 +8,13 @@ const Flex = styled.div`
   align-items: center;
   justify-content: ${(props) => props.center && "center"};
   flex-direction: ${(props) => props.column && "column"};
+  @media screen and (max-width: 640px) {
+    flex-direction: ${(props) => (props.altern ? "column-reverse" : "column")};
+  }
 `;
-const FlexContainer = ({ children, center, column }) => {
+const FlexContainer = ({ children, center, column, altern }) => {
   return (
-    <Flex column={column} center={center}>
+    <Flex column={column} center={center} altern={altern}>
       {children}
     </Flex>
   );
