@@ -1,10 +1,21 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import Button from "../Buttons";
 import Spacer from "../Utils/Spacer";
 
+const comeFromLeft = keyframes`
+    from{
+      transform: translateX(-250px) rotate(-9deg);
+      opacity: 0;
+    }
+    to{
+      transform: translateX(0) rotate(0);
+      opacity: 1;
+    }
+`;
 const Box = styled.div`
   width: 50%;
+  animation: ${comeFromLeft} 1.2s ease-in-out;
 `;
 const Sub = styled.h3`
   font-size: 1.7rem;
